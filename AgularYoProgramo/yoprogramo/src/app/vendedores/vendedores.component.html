@@ -1,12 +1,15 @@
-<table>
+<table class="table m-3">
 
-    <tr>
+    <thead>
+    <tr class="table-dark">
         <td>NOMBRE</td><td>APELLIDO</td><td>EMAIL</td><td>MONTO</td>
     </tr>
-
+    </thead>
+    
+    <tbody>
     <tr *ngFor="let temp of ListaVendedores">
         <td>{{temp.nombre}}</td><td>{{temp.apellido}}</td><td>{{temp.email}}</td>
         <td>{{temp.monto}}</td>
     </tr>
-
+    </tbody>
 </table>
