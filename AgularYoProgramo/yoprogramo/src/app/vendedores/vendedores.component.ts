@@ -9,7 +9,7 @@ import { Vendedores} from '../vendedores';
 export class VendedoresComponent implements OnInit {
 
   ListaVendedores: Vendedores[] = [
-    new Vendedores("N Persona 1","A Persona 1","Email Persona 1",1200),
+    new Vendedores("Pepe","Sand","pepe@hotmail.com",1200),
     new Vendedores("N Persona 2","A Persona 2","Email Persona 2",1800),
     new Vendedores("N Persona 3","A Persona 3","Email Persona 3",2800),
     new Vendedores("N Persona 4","A Persona 4","Email Persona 4",3800)  
