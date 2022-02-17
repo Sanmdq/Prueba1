@@ -1,0 +1,12 @@
+<table>
+
+    <tr>
+        <td>NOMBRE</td><td>APELLIDO</td><td>EMAIL</td><td>MONTO</td>
+    </tr>
+
+    <tr *ngFor="let temp of ListaVendedores">
+        <td>{{temp.nombre}}</td><td>{{temp.apellido}}</td><td>{{temp.email}}</td>
+        <td>{{temp.monto}}</td>
+    </tr>
+
+</table>
