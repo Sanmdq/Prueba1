@@ -1,16 +1,22 @@
 <table class="table ">
-    <table class="table table-striped">
+    <table class="table table-hover">
 
     <thead>
     <tr class="table-dark">
         <td>NOMBRE</td><td>APELLIDO</td><td>EMAIL</td><td>MONTO</td>
+        <td>TIENE PREMIO</td>
     </tr>
-    </thead>
+    </thead>   
     
     <tbody>
-    <tr *ngFor="let temp of ListaVendedores">
+    <tr *ngFor="let temp of ListaVendedores" [ngClass]="{'resaltar':temp.monto>1400}">
+
         <td>{{temp.nombre}}</td><td>{{temp.apellido}}</td><td>{{temp.email}}</td>
         <td>{{temp.monto}}</td>
+        <td>
+        <div *ngIf="temp.monto>1000;else noAlcanza">Si</div>
+        <ng-template #noAlcanza>No</ng-template>
+        </td>
     </tr>
     </tbody>
 </table>
